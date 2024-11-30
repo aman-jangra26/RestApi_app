@@ -1,1 +1,43 @@
+POST http://localhost:4000/api/user/register
+Content-Type: application/json
+
+{
+  "username": "Second user2",
+  "email": "Seconduser@exampadsdsdfsdfle133232.com",
+  "password": "securepassword123"
+}
+
+###
+
+DELETE http://localhost:4000/api/user/delete/674b3d1564720338dd9ac9ac
  
+
+###
+GET http://localhost:4000/api/user/
+Content-Type: application/json
+
+###
+GET http://localhost:4000/api/user/674b3e64cf19cc059f3fb50d
+Content-Type: application/json
+
+###
+PUT http://localhost:4000/api/user/674b3e64cf19cc059f3fb50d/update
+Content-Type: application/json
+
+{
+  "username": "this user is updated23",
+  "email": "Aman@gmail.com",
+  "password": "securepassword123"
+}
+
+###
+POST http://localhost:4000/api/user/674b3cfa64720338dd9ac9a9/add_details
+Content-Type: application/json
+
+{ 
+    "firstName": "John",
+    "lastName": "Doe",
+    "contactNumber": "1234567890",
+    "bio": "A short bio about John.",
+    "interests": ["coding", "music", "Football"]
+}
